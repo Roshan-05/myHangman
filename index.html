@@ -33,19 +33,30 @@
                         <div style="height: 4em;">
                             Guess the word:<div id="hangm_word"></div>
                         </div>
-                        <input id="guess" onkeyup="Hangman.guess(this.value); this.value=''; return false;" type="text" placeholder="">
+                        <input id="guess" onkeyup="Hangman.guess(this.value); this.value=''; return false;" type="text" placeholder="Guess the word">
+
+                        <div>
+                           <input id="to_guess" onchange="Hangman.take(this.value); this.value=''; return false;" type="text" placeholder="Write the word to be guessed">
+                        </div>
                     </div>
 
+                    
+                            
 
                     <div class="col-sm-3">
                         <button type="button" id="btn-start" class="btn-lg btn-info" onclick="Hangman.reset(); return false;" >New Game</button>
                     </div>
                 </form>
 
+                
+
 
 
         </div>
-        
+        <div>
+           
+            </div>
+
        
         
     </body>

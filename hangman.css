@@ -2,6 +2,7 @@ html,body {
     font-size: 1.2em;
     font-family: 'Arvo', serif;
     text-align: center;
+    background-color: #00c5b5;
 }
 
 a {
@@ -19,7 +20,7 @@ section#hangman {
     overflow: hidden;
 }
 
-#hangm {
+#mainbody {
     text-align: center;
 }
 
@@ -100,4 +101,17 @@ section#hangman {
     position: relative;
     bottom: 150px;
     left: 130px;
+}
+#btn-start {
+    padding : .8%;
+    background-color: black;
+    color: #00c5b5;
+    border-radius: 25%;
+    margin: .5%;
+}
+#guess, #to_guess {
+    padding: .5%;
+    margin: .5%;
+
+    background-color: #b4b4b4c8;
 }
